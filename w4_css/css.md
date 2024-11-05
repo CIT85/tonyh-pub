@@ -12,3 +12,11 @@
 :can list more than one font in case one is not available. uses it in order.
 -*How quotes work*
 :**Need** quotes around font family that has a space in between its name.
+#### Pseudo class
+-Keyword added to selectors to specifies the current state of the element class.
+-Enabling styling based on certain conditions
+-**How specificity and order works with links**:
+    -determines which style rule is applied
+    -*EX:*-:focus, :visited, :hover, and :active
+    -the order of how they are written still matters
+        -CSS applies the most specific rule last
