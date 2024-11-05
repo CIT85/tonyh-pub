@@ -6,10 +6,13 @@
 
 .container {
     border: 2px dashed red;
+    border-top-color: blue;
+    border-right: 10x dotted blue;
     font-size: 1.5rem;
-    margin-top: 1.5em;
+    margin: 1.5em;
+    /*margin-top: 1.5em;
     margin-right: 2em;
     margin-bottom: 2em;
-    margin-left: 2em;
+    margin-left: 2em;*/
     padding: 1.5em;
 }
