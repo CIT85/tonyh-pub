@@ -1,27 +1,44 @@
-header h1{
+h1{
+    border: 2px dashed #2874d8;
+    margin: 1em 1em 1em 1em;
+    width: 75%;
     font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 1em;
     text-align: center;
     vertical-align: top;
     color: rgb(50, 29, 240);
 }
 
 body {
-    padding: 10%;
+    padding: 1em 2em;
+    margin: 1.5em;
     font-size: 1rem;
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(102, 218, 73);
 }
 
-form {
+ol {
+    padding: 1em;
+    width: 45%;
+    margin: 1em;
+    text-align: center;
+    font-size: 28px;
+    color: rgb(173, 5, 5);
+    line-height: 2;
+}
+::marker {
+    color:#000000;
+    font-family: 'Roboto', sans-serif;
+}
+/* by using an ol list i can customize my pallet and using marker, i can keep my list number black.*/
+
+.container {
     max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
     background-color: #33a14e;
     border-radius: 5px;
-}
-
-label {
     font-size: 1rem;
     margin-bottom: 8px;
     display: block;
@@ -36,7 +53,7 @@ input[type="text"], input[type="email"], textarea {
     border-radius: 4px;
     font-size: 1rem;
 }
-
+/* this button element has an element of 1. this means that if i was to add another rule targeting the button, but has has a class than it would overrule this button element.*/
 button {
     background-color: #4CAF50;
     color: white;
@@ -73,17 +90,18 @@ textarea {
 }
 
 .styled-table {
-    width: 100%;
-    background-color: rgb(48, 201, 48);
+    width: 40%;
+    background-color: #aaae7f;
     border-collapse: collapse;
 }
 
 .styled-table caption {
     font-size: 2rem;
+    color: #143109;
     font-weight: bold;
-    background-color: rgb(48, 201, 48);
+    background-color: #d0d6b3;
     font-style: oblique;
-    border: 2px solid rgb(40, 11, 78);
+    border: 2px solid #efefef;
 }
 
 .styled-table th,
@@ -91,7 +109,7 @@ textarea {
     padding: 5px;
     text-align: left;
     vertical-align: top;
-    border: 2px solid rgb(40, 11, 78);
+    border: 2px solid #efefef;
 }
 
 a {
