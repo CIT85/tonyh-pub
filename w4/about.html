@@ -6,13 +6,14 @@
     <meta name="author" content="Tony Hang">
     <meta name="description" content="Hello, my name is Tony Hang and this page is about me.">
     <title>My First Web Page</title>
-    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="icon" href="../w4/img/icons8-hang-16.png">
     <link rel="stylesheet" href="../w4/style.css">
+
 </head>
 
 <body>
     <header>
-    <h1>Hello, I'm Tony Hang!</h1>
+    <h1>Hello, My Name is Tony Hang and I am an IT Major!</h1>
 
     <img src="img/tech.jpg" alt="HTML5 Logo" title="Baby From Newborn to Toddler" width="450" 
                 height="300">
@@ -33,17 +34,52 @@
         </header>
     <hr>
 
-    <ul>
-        <li>
-            Dial <a href="tel:+1234567890">my phone number</a>
-        </li>
-        <li>
-            Open <a href="https://www.google.com/" target="_blank">Google</a> in a new tab.
-        </li>
-    </ul>
-    &lt;&lt;&lt; &copy; <a href="about.html" >Tony Hang</a> &gt;&gt;&gt;
+     <section>
+        <h2>Contact Form</h2>
+        <p>For more information, please fill out this form
+        </p>
+        <form action="https://httpbin.org/post" method="POST">  
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Tony Hang"><br>
+
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="TonyHang15@yahoo.com"><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="555555555"><br>
+
+            <label>Preferred Contact Method:</label><br>
+            <input type="radio" id="email-contact" name="contact_method" value="Email" required>
+            <label for="email-contact">Email</label>
+            <input type="radio" id="phone-contact" name="contact_method" value="Phone">
+            <label for="phone-contact">Phone</label>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" cols="50" placeholder="Leave your message here..."></textarea><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="japan">Japan</option>
+                <option value="china">China</option>
+                <option value="australia">Australia</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Understanding the Output from httpbin</h2>
+        <p>When the form is submitted, the data is sent to <a href="https://httpbin.org" target="_blank">httpbin.org</a>, a service that returns the data it receives in response to a post request. Httpbin is often used to test and debug HTTP requests, and returns details in a readable format.
+    </section>
+
+    &lt;&lt;&lt; &copy; <a href="../w4/about.html" >Tony Hang</a> &gt;&gt;&gt;
     <p>
-        <a href="../w3/index.html">Back to Home</a>
+        <a href="../w4/index.html">Back to Home</a>
     </p>
 </body>
 
