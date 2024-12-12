@@ -110,12 +110,16 @@ a:hover {
 }
 
 .contact {
+  background-image: url(../img/golden-gate-bridge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   padding: 20px;
   text-align: center;
 }
 
 .contact-form {
-  background-color: #fff;
   padding: 20px;
   margin: 20px auto;
   max-width: 100%;
@@ -129,7 +133,7 @@ a:hover {
 }
 
 fieldset {
-  border: 2px solid red;
+  border: 3px solid rgb(149, 175, 0);
   padding: 15px;
   border-radius: 8px;
 }
