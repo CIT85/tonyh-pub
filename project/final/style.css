@@ -1,0 +1,152 @@
+/* General styles for body*/
+body {
+    background-color: #AA0000;
+    color: white; 
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for flex display*/
+.container {
+    max-width: 800px;
+    min-height: 300px;
+    margin-inline: auto;
+    border: 2px solid #B5A400;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+  } 
+  
+  .box {
+    min-width: 150px;
+    height: 150px;
+    background-color: #000;
+    color: rgb(109, 109, 109);
+    font-size: 2rem;
+    padding: 1rem;
+  
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+
+h1 {
+    color: #B5A400;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3em;
+}
+
+h2 {
+    color: #B5A400;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h3, h4 {
+    color: #B5A400;
+    padding: 20px;
+}
+
+figcaption {
+    color: #B5A400;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+}
+
+.color {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+.color::after {
+    content: attr(data-color); 
+    position: relative;
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0; 
+    visibility: hidden;
+}
+
+.color:hover::after {
+    opacity: 1;
+    visibility: visible; 
+    transition: opacity 0.3s ease-in-out, visibility 0s 0s; 
+}
+
+.color:hover {
+    position: relative;
+}
+
+p {
+    padding: 20px;
+    background-color: #B5A400;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+a {
+    color: #B5A400; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffe602;
+    text-decoration: underline;
+}
+
+/* For small screens*/
+@media screen and (max-width: 480px) {
+    body {
+      background-image: radial-gradient(whitesmoke, green)
+    }
+  }
+
+  /* For medium screens*/
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+      background-image: radial-gradient(rgb(126, 125, 125), rgb(110, 3, 3))
+    }
+  }
+
+  /* For larger screens*/
+  @media screen and (min-width: 769px)and (max-width: 1024px) {
+    body {
+      background-image: radial-gradient(rgb(0, 0, 0), rgb(156, 1, 1))
+    }
+  }
+  
+  /* For x-large screens*/
+  @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+      background-image: radial-gradient(rgb(137, 139, 0), rgb(0, 0, 0))
+    }
+  }
+  
+  /* For xx-large screens*/
+  @media screen and (min-width: 1201px) {
+    body {
+      background-image: radial-gradient(rgb(148, 0, 0), rgb(113, 22, 173))
+    }
+  
+    h1, h2 {
+      font-size: 1.5rem;
+    }
+  
+    nav { display: block }
+  }
+  
